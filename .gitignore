@@ -1,2 +1,4 @@
 example/www
 node_modules
+example2/www
+.DS_Store
