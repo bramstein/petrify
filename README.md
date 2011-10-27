@@ -43,10 +43,6 @@ _A simple and flexible static site generator for node.js_
 ## Getting started
 
 First, install the latest version of [node.js](http://nodejs.org/#download).
-Petrify uses git submodules for the rest of its dependencies. Once you've
-cloned the repository, do:
-
-    git submodule update --init --recursive
 
 Then, cd to the examples directory and run the build script. This will create
 a www directory with a bunch of HTML files inside. Voila! you've just generated
