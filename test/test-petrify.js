@@ -462,6 +462,7 @@ exports.testRun = function(test){
         output_dir: __dirname + '/fixtures/dir_exists',
         view_dir: 'view_dir',
         data_dir: 'data_dir',
+        data_file_filter: /.*\.md$/,
         media_dirs: ['media_dir1', 'media_dir2']
     };
     var loadTemplates_copy = petrify.loadTemplates;
@@ -593,7 +594,8 @@ exports.testRunErrors = function(test){
         template_dir: 'template_dir',
         output_dir: __dirname + '/fixtures/dir_exists',
         view_dir: 'view_dir',
-        data_dir: 'data_dir'
+        data_dir: 'data_dir',
+        data_file_filter: /.*\.md$/
     };
     var loadTemplates_copy = petrify.loadTemplates;
     petrify.loadTemplates = function(template_dir){
