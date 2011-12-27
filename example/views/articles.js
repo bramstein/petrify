@@ -7,8 +7,8 @@ exports.run = function(view, context){
     // parse meta data - this updates the context.data in-place, so
     // other views can make use of these changes
     context.data = context.data.map(function(x){
-        x.tags = x.metadata.tags.split(', ');
-        x.date = new Date(x.metadata.date);
+	x.tags = x.meta.tags.split(', ');
+        x.date = new Date(x.meta.date);
         x.url = x.filename.replace(/\.md$/, '.html');
         return x;
     });

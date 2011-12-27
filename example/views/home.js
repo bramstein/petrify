@@ -11,5 +11,5 @@ exports.run = function(view, context){
     });
 
     view.emit('index.html', html);
-
+    view.done();
 };

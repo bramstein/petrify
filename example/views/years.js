@@ -22,5 +22,5 @@ exports.run = function(view, context){
         view.emit(year + '.html', html);
 
     });
-
+    view.done();
 };
